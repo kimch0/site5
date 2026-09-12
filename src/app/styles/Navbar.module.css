@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--line-strong);
+}
+
+.links {
+  width: 78%;
+  display: flex;
+  justify-content: center;
+  gap: var(--space-3);
+}
+
+.links a {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  color: var(--ink-soft);
+}
+
+.contactCTA {
+  width: 10%;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  text-decoration: underline solid var(--line-strong);
+  text-underline-offset: var(--space-2);
+  color: var(--ink);
+}
