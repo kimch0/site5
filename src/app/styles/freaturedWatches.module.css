@@ -1,0 +1,50 @@
+.featuredImages {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 600px;
+}
+
+.featuredWatchesContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.featuredWatchesContainer > div {
+  width: 100%;
+}
+
+.featuredWatchesHeader {
+  padding: var(--space-5) 0;
+}
+
+/* .featuredWatchesHeader h2 {
+  font-family: var(--font-display);
+  font-size: 5rem;
+  font-weight: 300;
+}
+
+.featuredWatchesHeader p {
+  max-width: 38rem;
+}
+ */
+.buttonPrev,
+.buttonNext {
+  color: var(--ink) !important;
+  background-color: var(--vellum);
+  width: calc(var(--swiper-navigation-size) + 10px) !important;
+  height: calc(var(--swiper-navigation-size) + 10px) !important;
+  padding: 10px !important;
+  border-radius: 50% !important;
+  transition: all 0.2s ease !important;
+}
+.buttonPrev:hover,
+.buttonNext:hover {
+  background-color: var(--bronze) !important;
+  color: var(--vellum-deep) !important;
+}
+
+/* --swiper-navigation-size */

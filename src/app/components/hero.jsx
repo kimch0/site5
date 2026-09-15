@@ -1,11 +1,39 @@
+"use client";
+
+import { useRef, useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import styles from "../styles/Hero.module.css";
 
+gsap.registerPlugin(ScrollTrigger);
+
 export default function Hero() {
+  const heroRef = useRef(null);
+
+  useEffect(() => {
+    if (heroRef.current) {
+      gsap.fromTo(
+        heroRef.current,
+        { opacity: 0, x: -100 },
+        {
+          opacity: 1,
+          x: 0,
+          duration: 1,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: heroRef.current,
+            start: "top 80%",
+          },
+        },
+      );
+    }
+  }, []);
+
   return (
-    <div className={`${styles.hero} ${styles.elevationGrid}`}>
-      <div className={styles.leftColumn}>
-        <p className={styles.drawingMeta}>
+    <div id="hero" className={`${styles.hero} ${styles.elevationGrid}`}>
+      <div ref={heroRef} className={styles.leftColumn}>
+        <p className="drawingMeta">
           <span>Elevation 01</span>
           <span>Sheet A</span>
           <span>1:1</span>

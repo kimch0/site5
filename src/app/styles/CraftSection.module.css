@@ -1,0 +1,79 @@
+.section {
+  display: grid;
+  grid-template-columns: 1fr 3fr 5fr;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  padding: var(--space-5) 0;
+}
+
+.section > :first-child {
+  align-self: start;
+}
+
+.sectionNumber {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: var(--font-display);
+}
+
+.sectionText {
+  max-width: 34ch;
+}
+
+.dividerBorder {
+  border-bottom: solid 1px var(--line);
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.sectionImage {
+  object-fit: contain;
+}
+
+@media screen and (max-width: 800px) {
+  .section {
+    grid-template-columns: 1fr;
+    height: auto;
+    min-height: 100vh;
+    gap: var(--space-4);
+  }
+
+  .imageContainer {
+    width: 100%;
+    height: 50vh;
+  }
+
+}
+
+.paddingRight {
+  padding-right: var(--space-4);
+}
+
+@media screen and (max-width: 800px) {
+  .paddingRight {
+    padding-right: 0;
+  }
+}
+
+.paddingLeft {
+  padding-left: var(--space-4);
+}
+
+@media screen and (max-width: 800px) {
+  .paddingLeft {
+    padding-left: 0;
+  }
+}
