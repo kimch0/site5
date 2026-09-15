@@ -50,7 +50,7 @@ export default function Hero() {
       <div className={styles.rightColumn}>
         <figure className={styles.heroFigure} data-parallax-watch>
           <Image
-            src="/hero-section.jpg"
+            src="/site5/hero-section.jpg"
             alt="AUREN flagship mechanical watch with champagne dial and brown leather strap"
             height="638"
             width="479"

@@ -17,9 +17,9 @@ export default function Footer() {
           <span>© {new Date().getFullYear()} Auren. All rights reserved.</span>
         </div>
         <div className={styles.social}>
-          <Image src="/insta.png" alt="Instagram" width={32} height={32} />
-          <Image src="/link.png" alt="Linkedin" width={32} height={32} />
-          <Image src="/face.png" alt="Facebook" width={32} height={32} />
+          <Image src="/site5/insta.png" alt="Instagram" width={32} height={32} />
+          <Image src="/site5/link.png" alt="Linkedin" width={32} height={32} />
+          <Image src="/site5/face.png" alt="Facebook" width={32} height={32} />
         </div>
       </div>
     </div>

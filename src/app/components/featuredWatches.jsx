@@ -91,7 +91,7 @@ export function FeaturedWatches() {
       >
         <SwiperSlide style={{ height: "370px" }}>
           <Image
-            src="/watch1.jpg"
+            src="/site5/watch1.jpg"
             alt="Watch 1"
             fill
             className={styles.featuredImages}
@@ -100,7 +100,7 @@ export function FeaturedWatches() {
         </SwiperSlide>
         <SwiperSlide style={{ height: "370px" }}>
           <Image
-            src="/watch2.jpg"
+            src="/site5/watch2.jpg"
             alt="Watch 2"
             fill
             className={styles.featuredImages}
@@ -108,7 +108,7 @@ export function FeaturedWatches() {
         </SwiperSlide>
         <SwiperSlide style={{ height: "370px" }}>
           <Image
-            src="/watch5.jpg"
+            src="/site5/watch5.jpg"
             alt="Watch 5"
             fill
             className={styles.featuredImages}
@@ -116,7 +116,7 @@ export function FeaturedWatches() {
         </SwiperSlide>
         <SwiperSlide style={{ height: "370px" }}>
           <Image
-            src="/watch6.jpg"
+            src="/site5/watch6.jpg"
             alt="Watch 6"
             fill
             className={styles.featuredImages}
